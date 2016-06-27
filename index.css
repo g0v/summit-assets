@@ -8,18 +8,18 @@ img {
   margin: 0 auto;
 }
 
-#menu {
+.aside {
   width: 240px;
   padding-top: 76px;
   margin-left: 160px;
   float: left;
 }
 
-#menu > #logo {
+.aside > #logo {
   margin-bottom: 30px;
 }
 
-#menu > #menu_list {
+.aside > #menu_list {
   font-weight: 500;
   border-top: 1px solid #979797;
   border-bottom: 1px solid #979797;
