@@ -47,15 +47,13 @@ li {
 
 #menu_list > ul > li {
   padding-bottom: 19px;
-  /* Main Visual: */
   font-family: HelveticaNeue-Medium;
-  font-size: 18px;
-  color: #4A4A4A;
+  font-size: 24px;
+  color: #595858;
   letter-spacing: 0px;
 }
 
 #menu_list > ul > ul > li {
-  /* System Guide: */
   font-family: HelveticaNeue;
   font-size: 16px;
   color: #595858;
@@ -63,8 +61,11 @@ li {
   margin-bottom: 19px;
 }
 
+#menu_list > ul > ul > li > a {
+  color: #595858;
+}
+
 #license > h1{
-  /* 授權說明: */
   font-family: PingFangTC-Regular;
   font-size: 18px;
   color: #595858;
@@ -73,7 +74,6 @@ li {
 }
 
 #license {
-  /* 本專案所有提供下載之檔案採CC-BY授權: */
   font-family: PingFangTC-Regular;
   font-size: 15px;
   color: #595858;
@@ -104,6 +104,10 @@ body {
   line-height: 28px;
 }
 
+.page > p > a {
+  color: #595858;
+}
+
 .image {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -130,4 +134,12 @@ body {
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary:visited {
   background-color: #990228;
+}
+
+#license > p > a {
+  color: #595858;
+}
+
+a {
+  cursor: pointer;
 }
