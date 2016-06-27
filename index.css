@@ -143,3 +143,8 @@ body {
 a {
   cursor: pointer;
 }
+
+/* hide lazy-load image when no-js */
+.no-js .lazy {
+  display: none;
+}

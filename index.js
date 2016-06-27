@@ -1,4 +1,8 @@
 $(function() {
+    if ($.fn.lazyload) {
+        document.documentElement.className = '';
+    }
+
     $(".page-link").on("click", function (e) {
         renderPage($(this).data("page"))
     })
