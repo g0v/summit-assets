@@ -3,7 +3,7 @@ img {
   height: auto;
 }
 
-#main {
+.workspace {
   width: 1440px;
   margin: 0 auto;
 }
