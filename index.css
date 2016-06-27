@@ -86,7 +86,7 @@ body {
    color: #595858;
 }
 
-#content {
+.content {
   width: 1019px;
   float: right;
   background-color: #f3f3f3;
