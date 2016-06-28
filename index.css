@@ -39,6 +39,10 @@ a:focus {
   text-decoration: underline;
 }
 
+/*
+ * === LAYOUT ===
+ */
+
 .workspace {
   width: 1440px;
   margin: 0 auto;
@@ -50,6 +54,18 @@ a:focus {
   margin-left: 160px;
   float: left;
 }
+
+.content {
+  width: 1019px;
+  float: right;
+  background-color: #f3f3f3;
+  padding-left: 77px;
+  padding-top: 36px;
+  padding-right: 74px;
+  padding-bottom: 74px;
+}
+
+/* ASIDE part */
 
 .aside > #logo {
   margin-bottom: 30px;
@@ -118,15 +134,7 @@ a:focus {
   background: linear-gradient(90deg, currentColor, transparent, currentColor) repeat-x 0 90% / 4px 1px;
 }
 
-.content {
-  width: 1019px;
-  float: right;
-  background-color: #f3f3f3;
-  padding-left: 77px;
-  padding-top: 36px;
-  padding-right: 74px;
-  padding-bottom: 74px;
-}
+/* CONTENT part */
 
 .page {
   display: none;
@@ -182,6 +190,8 @@ a:focus {
 .no-js .lazy {
   display: none;
 }
+
+/* content page show / hide */
 
 #main_visual_-_system_guide:target ~ #page-main_visual_-_system_guide,
 #main_visual_-_illustration:target ~ #page-main_visual_-_illustration,
