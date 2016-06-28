@@ -44,25 +44,39 @@ a:focus {
  */
 
 .workspace {
-  width: 1440px;
+  display: flex;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
 .aside {
-  width: 240px;
+  position: relative;
+  z-index: 1;
+  width: 420px;
+  max-width: 80%;
   padding-top: 76px;
-  margin-left: 160px;
-  float: left;
+  padding: 76px 1.5% -0px 160px;
+  padding: 76px 2% -0px 10%;
+  background-color: #fff;
+}
+
+@media (max-width: 60em) {
+  .aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    overflow: auto;
+    transform: translateX(-100%);
+    transition: transform .3s;
+  }
 }
 
 .content {
-  width: 1019px;
-  float: right;
+  width: 1020px;
   background-color: #f3f3f3;
-  padding-left: 77px;
-  padding-top: 36px;
-  padding-right: 74px;
-  padding-bottom: 74px;
+  padding: 2.25em 5% 4.5em;
 }
 
 /* ASIDE part */
