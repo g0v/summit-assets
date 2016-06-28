@@ -60,6 +60,14 @@ a:focus {
   background-color: #fff;
 }
 
+.aside-controller {
+  display: none;
+  padding: .75em;
+  background-color: #484848;
+  font: 900 .75em sans-serif;
+  color: #fff;
+}
+
 @media (max-width: 60em) {
   .aside {
     position: fixed;
@@ -70,6 +78,33 @@ a:focus {
     overflow: auto;
     transform: translateX(-100%);
     transition: transform .3s;
+  }
+
+  .aside-controller {
+    display: inline-block;
+  }
+
+  .aside-controller::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0,0,0,.3);
+    transition: opacity .3s, visibility .3s;
+  }
+
+  #aside-controller:checked ~ .aside {
+    transform: none;
+  }
+
+  #aside-controller:checked ~ .content .aside-controller::after {
+    visibility: visible;
+    opacity: 1;
   }
 }
 
@@ -233,4 +268,15 @@ a:focus {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
