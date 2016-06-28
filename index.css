@@ -76,7 +76,6 @@ a:focus {
   padding-bottom: 19px;
   font-family: HelveticaNeue-Medium;
   font-size: 24px;
-  letter-spacing: 0px;
   text-transform: capitalize;
 }
 
@@ -86,7 +85,6 @@ a:focus {
   padding-left: 25px;
   font-family: HelveticaNeue;
   font-size: 16px;
-  letter-spacing: 0px;
 }
 
 .nav__list::before {
@@ -134,7 +132,6 @@ a:focus {
   font-family: PingFangTC-Regular;
   font-size: 15px;
   color: #282828;
-  letter-spacing: 0px;
   line-height: 28px;
 }
 
@@ -147,7 +144,6 @@ a:focus {
   margin-top: 50px;
   font-family: HelveticaNeue-Medium;
   font-size: 24px;
-  letter-spacing: 0px;
   margin-bottom: 20px;
 }
 
