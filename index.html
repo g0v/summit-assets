@@ -21,6 +21,7 @@
         var $lazyImgs = $('img.lazy');
 
         $(window).on('hashchange', function (e) {
+          asideController.checked = false;
           $lazyImgs.lazyload({
             'effect': 'fadeIn'
           });
