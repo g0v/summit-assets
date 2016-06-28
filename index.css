@@ -61,6 +61,8 @@ a:focus {
 }
 
 .aside-controller {
+  position: sticky;
+  top: 2em;
   display: none;
   padding: .75em;
   background-color: #484848;
