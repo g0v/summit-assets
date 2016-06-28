@@ -72,13 +72,13 @@ a:focus {
 }
 
 .nav {
-  font-weight: 500;
-  border-top: 1px solid #979797;
-  border-bottom: 1px solid #979797;
   padding-top: 35px;
   padding-bottom: 38px;
   margin-bottom: 35px;
   margin-right: 30px;
+  border-top: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+  font-weight: 500;
 }
 
 .nav__lists {
