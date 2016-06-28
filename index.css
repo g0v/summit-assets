@@ -157,18 +157,25 @@ a:focus {
   font-size: 1.5em;
 }
 
-.btn-primary{
-  background-color: #c90435;
+.btn-primary {
+  display: inline-block;
   border: 2px solid black;
   margin-top: 25px;
   margin-bottom: 25px;
   margin-right: 27px;
-  padding-left: 44px;
-  padding-right: 44px;
+  padding: 6px 44px;
+  background-color: #c90435;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #fff;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary:visited {
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:visited {
   background-color: #990228;
+  text-decoration: none;
 }
 
 /* hide lazy-load image when no-js */
