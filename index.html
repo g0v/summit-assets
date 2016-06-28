@@ -13,10 +13,18 @@
     <script src="jquery.lazyload.js"></script>
     <link rel="stylesheet" href="index.css">
     <script>
+      if ($.fn.lazyload) {
+        document.documentElement.className = '';
+      }
+
       $(function() {
-        $('img.lazy').lazyload({
-            effect : 'fadeIn'
-        });
+        var $lazyImgs = $('img.lazy');
+
+        $(window).on('hashchange', function (e) {
+          $lazyImgs.lazyload({
+            'effect': 'fadeIn'
+          });
+        }).trigger('hashchange');
       });
     </script>
     <!-- <script src="index.js"></script> -->
