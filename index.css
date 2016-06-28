@@ -72,12 +72,16 @@ a:focus {
 }
 
 .nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
   padding-top: 35px;
   padding-bottom: 38px;
   margin-bottom: 35px;
   margin-right: 30px;
   border-top: 1px solid #979797;
   border-bottom: 1px solid #979797;
+  background-color: inherit;
   font-weight: 500;
 }
 
