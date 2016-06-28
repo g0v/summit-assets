@@ -128,6 +128,10 @@ a:focus {
   padding-bottom: 74px;
 }
 
+.page {
+  display: none;
+}
+
 .page > p {
   font-family: PingFangTC-Regular;
   font-size: 15px;
@@ -164,4 +168,28 @@ a:focus {
 /* hide lazy-load image when no-js */
 .no-js .lazy {
   display: none;
+}
+
+#main_visual_-_system_guide:target ~ #page-main_visual_-_system_guide,
+#main_visual_-_illustration:target ~ #page-main_visual_-_illustration,
+#main_visual_-_bag:target ~ #page-main_visual_-_bag,
+#main_visual_-_stickers:target ~ #page-main_visual_-_stickers,
+#main_visual_-_badges:target ~ #page-main_visual_-_badges,
+#main_visual_-_media:target ~ #page-main_visual_-_media,
+#website_-_icon:target ~ #page-website_-_icon,
+#website_-_website_mockup:target ~ #page-website_-_website_mockup {
+  display: block;
+}
+
+#main_visual_-_system_guide,
+#main_visual_-_illustration,
+#main_visual_-_bag,
+#main_visual_-_stickers,
+#main_visual_-_badges,
+#main_visual_-_media,
+#website_-_icon,
+#website_-_website_mockup {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
