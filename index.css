@@ -78,11 +78,11 @@ a:focus {
   padding-top: 35px;
   padding-bottom: 38px;
   margin-bottom: 35px;
-  margin-right: 30px;
-  border-top: 1px solid #979797;
-  border-bottom: 1px solid #979797;
   background-color: inherit;
   font-weight: 500;
+  box-shadow:
+    -10px -11px 0 -10px #979797,
+    -10px 11px 0 -10px #979797;
 }
 
 .nav__lists {
