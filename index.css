@@ -254,14 +254,28 @@ a:focus {
 
 /* content page show / hide */
 
-#main_visual_-_system_guide:target ~ #page-main_visual_-_system_guide,
-#main_visual_-_illustration:target ~ #page-main_visual_-_illustration,
-#main_visual_-_bag:target ~ #page-main_visual_-_bag,
-#main_visual_-_stickers:target ~ #page-main_visual_-_stickers,
-#main_visual_-_badges:target ~ #page-main_visual_-_badges,
-#main_visual_-_media:target ~ #page-main_visual_-_media,
-#website_-_icon:target ~ #page-website_-_icon,
-#website_-_website_mockup:target ~ #page-website_-_website_mockup {
+#main_visual_-_system_guide:target ~ .aside [href="#main_visual_-_system_guide"]::before,
+#main_visual_-_illustration:target ~ .aside [href="#main_visual_-_illustration"]::before,
+#main_visual_-_bag:target          ~ .aside [href="#main_visual_-_bag"]::before,
+#main_visual_-_stickers:target     ~ .aside [href="#main_visual_-_stickers"]::before,
+#main_visual_-_badges:target       ~ .aside [href="#main_visual_-_badges"]::before,
+#main_visual_-_media:target        ~ .aside [href="#main_visual_-_media"]::before,
+#website_-_icon:target             ~ .aside [href="#website_-_icon"]::before,
+#website_-_website_mockup:target   ~ .aside [href="#website_-_website_mockup"]::before {
+  box-shadow:
+    inset 0 0 0 2px #000,
+    inset 0 0 0 10px #c90435;
+}
+
+
+#main_visual_-_system_guide:target ~ .content #page-main_visual_-_system_guide,
+#main_visual_-_illustration:target ~ .content #page-main_visual_-_illustration,
+#main_visual_-_bag:target          ~ .content #page-main_visual_-_bag,
+#main_visual_-_stickers:target     ~ .content #page-main_visual_-_stickers,
+#main_visual_-_badges:target       ~ .content #page-main_visual_-_badges,
+#main_visual_-_media:target        ~ .content #page-main_visual_-_media,
+#website_-_icon:target             ~ .content #page-website_-_icon,
+#website_-_website_mockup:target   ~ .content #page-website_-_website_mockup {
   display: block;
 }
 
