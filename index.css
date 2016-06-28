@@ -4,7 +4,7 @@ img {
 }
 
 #main {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -87,8 +87,7 @@ body {
 }
 
 #content {
-  width: 1019px;
-  float: right;
+  margin-left: 420px;
   background-color: #f3f3f3;
   padding-left: 77px;
   padding-top: 36px;
@@ -142,4 +141,37 @@ body {
 
 a {
   cursor: pointer;
+}
+
+/* Responsive */
+.width-1-3 {
+  float: left;
+  width: 33.3333%;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+#menu, #content {
+  transition: 150ms margin-left ease;
+}
+
+@media screen and (max-width: 1200px) {
+  #menu {
+    margin-left: 80px;
+  }
+  #content {
+    margin-left: 340px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #menu {
+    margin-left: 40px;
+    width: 200px;
+  }
+  #content {
+    margin-left: 260px;
+  }
 }
