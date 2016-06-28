@@ -164,20 +164,18 @@ a:focus {
   font-size: 16px;
 }
 
-.nav__list::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: .25em;
-  transform: translateY(-50%);
-  width: 13px;
-  height: 13px;
+.nav__list a {
+  position: relative;
 }
 
-.nav__list.is-active::before {
-  box-shadow:
-    inset 0 0 0 2px #000,
-    inset 0 0 0 10px #c90435;
+.nav__list a::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: -1.23em;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
 }
 
 .license {
