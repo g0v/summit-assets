@@ -110,6 +110,10 @@ a:focus {
     visibility: visible;
     opacity: 1;
   }
+
+  .nav.nav {
+    position: static;
+  }
 }
 
 .content {
