@@ -14,11 +14,11 @@
     <script src="jquery.lazyload.js"></script>
     <link rel="stylesheet" href="index.css">
     <script>
-      if ($.fn.lazyload) {
+      if (jQuery.fn.lazyload) {
         document.documentElement.className = '';
       }
 
-      $(function() {
+      jQuery(function ($) {
         var $lazyImgs = $('img.lazy');
 
         $(window).on('hashchange', function (e) {
