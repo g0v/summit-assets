@@ -24,7 +24,11 @@
           $lazyImgs.lazyload({
             'effect': 'fadeIn'
           });
-        }).trigger('hashchange');
+        });
+
+        setTimeout(function () {
+          $(window).trigger('hashchange');
+        }, 0);
       });
     </script>
     <!-- <script src="index.js"></script> -->
