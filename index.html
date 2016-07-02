@@ -2,6 +2,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
       g0v summit 2016 open design
     </title>
@@ -9,76 +10,78 @@
     <meta property="og:title" content="g0v零時政府2016 summit設計授權網站"/>
     <meta property="og:image" content="https://g0v.github.io/summit-assets/OG.png"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <script src="bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+    <!-- <script src="bootstrap.min.js"></script> -->
     <script src="jquery.lazyload.js"></script>
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
   </head>
   <body>
-    <div id="main">
-      <div id="menu">
-        <img src="assets/logo.png" id="logo">
-        <div id="menu_list">
-          <ul>
-            <li>
-              Main Visual
+    <div class="workspace">
+      <input type="checkbox" class="sr-only" id="aside-controller">
+
+      <span id="main_visual_-_system_guide"></span>
+      <span id="main_visual_-_illustration"></span>
+      <span id="main_visual_-_bag"></span>
+      <span id="main_visual_-_stickers"></span>
+      <span id="main_visual_-_badges"></span>
+      <span id="main_visual_-_media"></span>
+      <span id="website_-_icon"></span>
+      <span id="website_-_website_mockup"></span>
+
+      <aside class="aside">
+        <img src="assets/logo.png" id="logo" title="g0v summit 2016" alt="logo of g0v summit 2016">
+
+        <nav class="nav">
+          <ul class="nav__lists" data-header="main visual">
+            <li class="nav__list">
+              <a href="#main_visual_-_system_guide">
+                System Guide
+              </a>
             </li>
-            <ul>
-              <li>
-                <a href="#main_visual_-_system_guide" class="page-link" id="link-page-main_visual_-_system_guide" data-page="page-main_visual_-_system_guide">
-                  System Guide
-                </a>
-              </li>
-              <li>
-                <a href="#main_visual_-_illustration" class="page-link" id="link-page-main_visual_-_illustration" data-page="page-main_visual_-_illustration">
-                  Illustration
-                </a>
-              </li>
-              <li>
-                <a href="#main_visual_-_bag" class="page-link" id="link-page-main_visual_-_bag" data-page="page-main_visual_-_bag">
-                  Bag
-                </a>
-              </li>
-              <li>
-                <a href="#main_visual_-_stickers" class="page-link" id="link-page-main_visual_-_stickers" data-page="page-main_visual_-_stickers">
-                  Stickers
-                </a>
-              </li>
-              <li>
-                <a href="#main_visual_-_badges" class="page-link" id="link-page-main_visual_-_badges" data-page="page-main_visual_-_badges">
-                  Badges
-                </a>
-              </li>
-              <li>
-                <a href="#main_visual_-_media" class="page-link" id="link-page-main_visual_-_media" data-page="page-main_visual_-_media">
-                  Media
-                </a>
-              </li>
-            </ul>
-          </ul>
-          <ul>
-            <li>
-              Website
+            <li class="nav__list">
+              <a href="#main_visual_-_illustration">
+                Illustration
+              </a>
             </li>
-            <ul>
-              <li>
-                <a href="#website_-_icon" class="page-link" id="link-page-website_-_icon" data-page="page-website_-_icon">
-                  Icon
-                </a>
-              </li>
-              <li>
-                <a href="#website_-_website_mockup" class="page-link" id="link-page-website_-_website_mockup" data-page="page-website_-_website_mockup">
-                  Website Mockup
-                </a>
-              </li>
-            </ul>
+            <li class="nav__list">
+              <a href="#main_visual_-_bag">
+                Bag
+              </a>
+            </li>
+            <li class="nav__list">
+              <a href="#main_visual_-_stickers">
+                Stickers
+              </a>
+            </li>
+            <li class="nav__list">
+              <a href="#main_visual_-_badges">
+                Badges
+              </a>
+            </li>
+            <li class="nav__list">
+              <a href="#main_visual_-_media">
+                Media
+              </a>
+            </li>
           </ul>
-        </div>
-        <div id="license">
-          <h1>
+          <ul class="nav__lists" data-header="website">
+            <li class="nav__list">
+              <a href="#website_-_icon">
+                Icon
+              </a>
+            </li>
+            <li class="nav__list">
+              <a href="#website_-_website_mockup">
+                Website Mockup
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="license">
+          <h3 class="license__title">
             授權方式
-          </h1>
+          </h3>
           <p>
             本專案所有提供下載之檔案採CC-BY授權
             <br>
@@ -95,14 +98,14 @@
           <a href="https://github.com/g0v/summit-assets">Fork me on github</a>
           </p>
         </div>
-      </div>
-      <div id="content">
-        <div id="page-main_visual" class="page">
-        </div>
-        <div id="page-main_visual_-_system_guide" class="page">
-          <h1>
+      </aside>
+      <main class="content">
+        <label for="aside-controller" class="aside-controller">MENU</label>
+
+        <article id="page-main_visual_-_system_guide" class="page">
+          <h2 class="main-title">
             Main Visual - System Guide
-          </h1>
+          </h2>
           <p>
           2016 g0v零時政府summit的主題為拆後重建，因此以一個輕鬆的插畫呈現。藉由分解的零件、工具與小人偶動態，讓以往沒有參與經驗的會眾能感受到g0v的初階印象。在長久參與的部分，各樓層的動態以g0v參與者的行為作為發想，進而繪製出一幅屬於零時政府的圖像。
           </p>
@@ -126,7 +129,7 @@
               </noscript>
             </a>
           </div>
-          <h1>Color</h1>
+          <h3 class="sub-title">Color</h3>
           <p>色彩以鮮艷飽和的色調做為搭配，呈現活潑、卡通一般的感覺。</p>
           <div class="image">
             <a href="assets/system_guide/system-3.png">
@@ -136,7 +139,7 @@
               </noscript>
             </a>
           </div>
-          <h1>圖像系統</h1>
+          <h3 class="sub-title">圖像系統</h3>
           <p>以強烈的黑邊作為系統性提示，表現漫畫、鮮明的個性</p>
           <div class="image">
             <a href="assets/system_guide/system-4.png">
@@ -146,7 +149,7 @@
               </noscript>
             </a>
           </div>
-          <h1>發想過程</h1>
+          <h3 class="sub-title">發想過程</h3>
           <div class="image">
             <a href="assets/system_guide/system-5.png">
               <img class="lazy" data-original="assets/system_guide/system-5.png" width="862" height="672">
@@ -155,11 +158,11 @@
               </noscript>
             </a>
           </div>
-        </div>
-        <div id="page-main_visual_-_badges" class="page">
-          <h1>
+        </article>
+        <article id="page-main_visual_-_badges" class="page">
+          <h2 class="main-title">
             Main Visual - Badges
-          </h1>
+          </h2>
           <div>
             <a href="assets/badges/badge.ai" class="btn btn-primary">
               下載 .ai
@@ -176,11 +179,11 @@
               </noscript>
             </a>
           </div>
-        </div>
-        <div id="page-main_visual_-_bag" class="page">
-          <h1>
+        </article>
+        <article id="page-main_visual_-_bag" class="page">
+          <h2 class="main-title">
             Main Visual - Bag
-          </h1>
+          </h2>
           <div>
             <a href="assets/bag/bag.ai" class="btn btn-primary">
               下載 .ai
@@ -213,11 +216,11 @@
               </noscript>
             </a>
           </div>
-        </div>
-        <div id="page-main_visual_-_illustration" class="page">
-          <h1>
+        </article>
+        <article id="page-main_visual_-_illustration" class="page">
+          <h2 class="main-title">
             Main Visual - Illustration
-          </h1>
+          </h2>
           <div>
             <a href="assets/illustration/g0v-2016%20summit-main%20visual.ai" class="btn btn-primary">
               下載 .ai
@@ -235,20 +238,20 @@
             </a>
           </div>
           <center><p>感謝Tuiry提供食物草圖與小人動圖</p></center>
-          <div class="clearfix">
-          <a href="assets/illustration/cutter.gif" class="width-1-3">
+          <div class="animated-illu">
+          <a href="assets/illustration/cutter.gif">
             <img class="lazy" data-original="assets/illustration/cutter.gif" width="268" height="268">
             <noscript>
               <img class="lazy-fallback" src="assets/illustration/cutter.gif" width="268" height="268">
             </noscript>
           </a>
-          <a href="assets/illustration/digger.gif" class="width-1-3">
+          <a href="assets/illustration/digger.gif">
             <img class="lazy" data-original="assets/illustration/digger.gif" width="268" height="268">
             <noscript>
               <img class="lazy-fallback" src="assets/illustration/digger.gif" width="268" height="268">
             </noscript>
           </a>
-          <a href="assets/illustration/filler.gif" class="width-1-3">
+          <a href="assets/illustration/filler.gif">
             <img class="lazy" data-original="assets/illustration/filler.gif" width="268" height="268">
             <noscript>
               <img class="lazy-fallback" src="assets/illustration/filler.gif" width="268" height="268">
@@ -263,11 +266,11 @@
               </noscript>
             </a>
           </div>
-        </div>
-        <div id="page-main_visual_-_media" class="page">
-          <h1>
+        </article>
+        <article id="page-main_visual_-_media" class="page">
+          <h2 class="main-title">
             Main Visual - Media
-          </h1>
+          </h2>
           <div>
             <a href="assets/media/media%20title.ai" class="btn btn-primary">
               下載 .ai
@@ -292,11 +295,11 @@
               </noscript>
             </a>
           </div>
-        </div>
-        <div id="page-main_visual_-_stickers" class="page">
-          <h1>
+        </article>
+        <article id="page-main_visual_-_stickers" class="page">
+          <h2 class="main-title">
             Main Visual - Stickers
-          </h1>
+          </h2>
           <div>
             <a href="assets/stickers/sticker.ai" class="btn btn-primary">
               下載 .ai
@@ -332,13 +335,13 @@
               </noscript>
             </a>
           </div>
-        </div>
-        <div id="page-website" class="page">
-        </div>
-        <div id="page-website_-_icon" class="page">
-          <h1>
+        </article>
+        <article id="page-website" class="page">
+        </article>
+        <article id="page-website_-_icon" class="page">
+          <h2 class="main-title">
             Website - Icon
-          </h1>
+          </h2>
           <div>
             <a href="assets/website/icon/summit-icon-set.sketch" class="btn btn-primary">
               下載 .sketch
@@ -355,11 +358,11 @@
               </noscript>
             </a>
           </div>
-        </div>
-        <div id="page-website_-_website_mockup" class="page">
-          <h1>
+        </article>
+        <article id="page-website_-_website_mockup" class="page">
+          <h2 class="main-title">
             Website - Website Mockup
-          </h1>
+          </h2>
           <div>
             <a href="assets/website/website mockup/g0vsummit_mockup.sketch" class="btn btn-primary">
               下載 .sketch
@@ -373,8 +376,8 @@
               </noscript>
             </a>
           </div>
-        </div>
-      </div>
+        </article>
+      </main>
     </div>
   </body>
 </html>

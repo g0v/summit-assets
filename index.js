@@ -1,36 +1,27 @@
-$(function() {
-    if ($.fn.lazyload) {
-        document.documentElement.className = '';
-    }
+if (jQuery.fn.lazyload) {
+  document.documentElement.className = '';
+}
 
-    $(".page-link").on("click", function (e) {
-        renderPage($(this).data("page"))
-    })
+jQuery(function ($) {
+  var $lazyImgs = $('img.lazy');
+  var asideController = document.getElementById('aside-controller');
 
-    $("img.lazy").lazyload({
-        effect : "fadeIn"
+  var isValidHash = function () {
+    return !!$('#page-' + document.location.hash.replace('#', '')).length;
+  };
+
+  if (!isValidHash()) {
+    document.location.hash = '#' + $('.page')[0].id.split('page-')[1];
+  }
+
+  $(window).on('hashchange', function (e) {
+    asideController.checked = false;
+    $lazyImgs.lazyload({
+      'effect': 'fadeIn'
     });
+  });
 
-    if (window.location.hash != "" ){
-        renderPage("page-" + window.location.hash.replace("#", ""))
-    } else {
-        renderPage($($(".page-link")[0]).data("page"))
-    }
-
-})
-
-
-function clearActive() {
-    $(".page-link").parent().removeClass("active")
-}
-
-function renderPage(page) {
-    clearActive()
-    $(".page").css("display", "none")
-    $(".page").removeClass("active-page")
-    $("#" + page).css("display", "block")
-    $("#" + page).addClass("active-page")
-    $("#link-" + page).parent().addClass("active")
-    $("img.lazy").lazyload();
-}
-
+  setTimeout(function () {
+    $(window).trigger('hashchange');
+  }, 0);
+});
